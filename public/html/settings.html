@@ -1,0 +1,66 @@
+<div class="container" ng-controller="settingsCtrl">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+            <div class="span5">
+                <h6 >Price range between Min:{{demo1.min}}kr and Max:{{demo1.max}}kr</h6>
+                <div range-slider min="0" max="100" model-min="demo1.min" model-max="demo1.max"></div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <ul class="list-inline">
+                <li> <div class="checkbox">
+                    <label><input type="checkbox" value="">Snabblagat</label>
+                </div></li>
+                <li> <div class="checkbox">
+                    <label><input type="checkbox" value="">Ekologist</label>
+                </div></li>
+            </ul>
+
+        </div>
+        <div class="col-lg-3"></div>
+
+    </div>
+    <div class="row">
+        <h4 class="text-center">Matpreferencer</h4>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <ul class="list-inline">
+                <li>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Vegeterian</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Vegan</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Glutenintolerant</label>
+                    </div>
+                </li>
+            </ul>
+        <ul class="list-inline">
+            <li>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Laktosintolerant</label>
+                </div>
+            </li>
+            <li>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Inget rött kött</label>
+                </div>
+            </li>
+            <li>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Ingen fisk</label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+</div>
+</div>

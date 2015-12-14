@@ -1,0 +1,11 @@
+#recipe{
+    margin-top: 40px;
+    background-color: #f2f2f2;
+}
+#imageContainer img {
+    width: 426px;
+    height: 320px;
+}
+#imageContainer a:hover img{
+    border:3px solid #0000ff;
+}

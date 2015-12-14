@@ -1,0 +1,7 @@
+<div ng-controller="selectedImagesCtrl" ng-init="entities = getImages()" id="selectedImagesList">
+    <ul class="list-inline">
+    <li ng-repeat="image in entities" ng-if="image.selected">
+        <img ng-src="images/categories/{{image.category}}/{{image.imageUrl}}" alt="Description" ng-click="setCategoryImageSelected(image)"/>
+    </li>
+    </ul>
+</div>

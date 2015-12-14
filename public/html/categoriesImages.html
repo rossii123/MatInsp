@@ -1,0 +1,15 @@
+<div id="imageContainer" ng-controller="imageCtrl" ng-init="entities = getImagesByCategory()">
+<div ng-repeat="imageCategory in entities">
+    <h4>{{imageCategory.category}}</h4>
+    <div class="photobanner slider variable-width">
+        <slick slides-to-scroll=1 slides-to-show=5 infinite=true variableWidth=true>
+            <dic ng-repeat="image in imageCategory.images">
+                <div class="image">
+                    <div class="hoverFoodName">{{image.name}}</div>
+                    <img data-lazy="images/categories/{{image.category}}/{{image.imageUrl}}" alt="Description" ng-click="setCategoryImageSelected(image)" ng-class="{selected:image.selected}"/>
+                </div>
+            </dic>
+        </slick>
+    </div>
+</div>
+</div>

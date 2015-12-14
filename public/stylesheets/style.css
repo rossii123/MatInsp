@@ -1,0 +1,38 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #e2c78d;
+    padding-top:106px;
+
+}
+#mainnav{
+  background-color: #d17b25;
+}
+#mainnav a{
+  color:white;
+}
+#selectedImagesList {
+
+    top: 65px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+}
+#selectedImagesList img{
+    width: 35px;
+    height: 23px;
+
+}
+
+ul.list-inline {
+    text-align: center;
+}
+#siteName{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    color:white;
+    font-size: larger;
+}

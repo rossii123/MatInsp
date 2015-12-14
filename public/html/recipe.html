@@ -1,0 +1,37 @@
+<div class="container" id="recipeView" ng-controller="recipeCtrl" ng-init="recipe = getRecipe()">
+    <div class="row">
+        <div class="col-lg-4">
+            <a href="#/start">
+            <img src="images/recipe/{{recipe.imageName}}" class="img-rounded" alt="Cinque Terre" width="304" height="236" id="recipeImage">
+            </a>
+        </div>
+        <div class="col-lg-8">
+            <div class="row">
+                <h3 class="text-center">{{recipe.title}}</h3>
+            </div>
+            <p>{{recipe.description}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <h3>Ingrediens</h3>
+            <table class="table">
+                <tr ng-repeat="ingredient in recipe.ingredients">
+                    <td>{{ingredient.amount}}</td>
+                    <td>{{ingredient.ingredient}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-9" id="instructions">
+            <h3>Gör så här</h3>
+            <table class="table">
+                <tr ng-repeat="instruction in recipe.instructions">
+                    <td>{{$index + 1}}</td>
+                    <td>{{instruction.step}}</td>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
