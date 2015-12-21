@@ -1,4 +1,4 @@
-<nav id="mainnav" class="navbar navbar-default navbar-fixed-top affix-top">
+<nav id="mainnav" class="navbar navbar-default navbar-fixed-top affix-top" ng-controller="settingsCtrl">
     <div id="siteName">Food</div>
     <div class="container-fluid">
         <!-- brand and toggle get grouped for better mobile display -->
@@ -17,9 +17,13 @@
                 <li>
                     <a class="page-scroll" href="#settings">My settings <span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
                 </li>
+                <li>
+                    <uib-tabset vertical="true" type="pills">
+                        <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
+                    </uib-tabset>
+                </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
 </nav>

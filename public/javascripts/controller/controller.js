@@ -59,3 +59,10 @@ app.controller('recipeCtrl', function ($scope,viewRecipeService) {
         return viewRecipeService.getRecipeToView();
     }
 });
+app.controller('recipeCtrl', function ($scope,viewRecipeService) {
+    $scope.getRecipe = function(){
+        return viewRecipeService.getRecipeToView();
+    }
+});
+
+

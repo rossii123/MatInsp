@@ -20,6 +20,7 @@
 
 
     <script  type="text/javascript" src="externalLibs/rangeSlide/angular.rangeSlider.js"></script>
+    <script  type="text/javascript" src="externalLibs/angular/ui-bootstrap-tpls-0.14.3.min.js"></script>
 
 
     <script type="text/javascript" src="javascripts/directive.js"></script>
@@ -54,5 +55,22 @@
     <selected-categories></selected-categories>
     <div ng-view class="view"></div>
 </div>
+<flipper flipped="flipped" horizontal>
+    <front class="front tile">
+    the front!
+    </front>
+    <back>
+        the back!
+    </back>
+</flipper>
+
+<flipper flipped="flipped" vertical>
+    <div class="front tile">
+        the front!
+    </div>
+    <div class="back tile">
+        the back!
+    </div>
+</flipper>
 </body>
 </html>

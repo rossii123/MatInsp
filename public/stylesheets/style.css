@@ -1,11 +1,11 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #e2c78d;
+  background-color: #f5efff;
     padding-top:106px;
 
 }
 #mainnav{
-  background-color: #d17b25;
+  background-color: rgba(5, 9, 33, 0.97);
 }
 #mainnav a{
   color:white;

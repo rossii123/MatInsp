@@ -7,5 +7,14 @@
     height: 320px;
 }
 #imageContainer a:hover img{
-    border:3px solid #0000ff;
+    border:3px solid #404040;
+}
+div.thumbnail{
+    border:2px solid black;
+}
+.recipeTitle{
+    font-family: Courier;
+    font-size: 15px;
+    height:45px;
+    text-align: center;
 }
